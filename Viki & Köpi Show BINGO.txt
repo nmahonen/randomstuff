@@ -1,4 +1,5 @@
 ﻿Tämä ohje liittyy koodiin vks-bingo-selain
+Testi
 
 Viki & Köpi Show BINGO
 
