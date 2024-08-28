@@ -1,4 +1,6 @@
-﻿Viki & Köpi Show BINGO
+﻿Tämä ohje liittyy koodiin vks-bingo-selain
+
+Viki & Köpi Show BINGO
 
 Tervetuloa pelaamaan VKS-bingoa! Bingon idea on yksinkertainen: kuuntele Viki & Köpi Showta 
 joko suorana lähetyksenä tai Yle Areenasta menneitä jaksoja ja klikkaa ruutua, kun kuulet 
