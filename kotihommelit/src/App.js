@@ -1,9 +1,13 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
 
 function App() {
 
-  const [checkedList, setCheckedList] = useState([]);
+  const [checkedList, setCheckedList] = useState( () => {
+    const saved =  localStorage.getItem('checkedList');
+    return saved ? JSON.parse(saved) : [];
+  });
+
   const LIST_DATA = [
     {id: "1", value: "Tiskit_1"},
     {id: "2", value: "Tiskit_2"},
@@ -20,6 +24,11 @@ function App() {
     {id: "13", value: "Ei_puhelinta"},
     {id: "14", value: "Käsipyyhkeet"},  
   ];
+
+  useEffect(() => {
+    localStorage.setItem('checkedList', JSON.stringify(checkedList));
+  }, [checkedList]);
+
 
 const handleSelect = (event) => {
 const value = event.target.value;
@@ -52,6 +61,7 @@ const goal = 10;
                 name="languages"
                 value={item.value}
                 onChange={handleSelect}
+                checked={checkedList.includes(item.value)}
                 />
                 <label>{item.value}</label>
                 </div>
