@@ -33,6 +33,9 @@ if (isChecked) {
 }
 };
 
+const completedCount = checkedList.length;
+const goal = 10;
+
   return (
     <div className="container">
       <div className="card">
@@ -56,15 +59,11 @@ if (isChecked) {
           })}
           </div>
 
-          <div className="list-container">
-            <label>Tehdyt kotihommat:</label>
-            {checkedList.map((item, index) => {
-              return (
-                <div className="chip">
-                  <p className="chip-label">{item}</p>
-                  </div>
-              );
-            })}
+            <div className="counter">
+              <p>Suoritettu {completedCount} / {goal}</p>
+              {completedCount >= goal && (
+                <p className="success-message">Hommat tehty!</p>
+              )}
             </div>
         </div>
       </div>
