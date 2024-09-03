@@ -26,13 +26,13 @@
 .card-header{
   border-bottom: 1px solid #F6F6F6;
   padding: 1rem 1.2rem;
-  background-color: #00A8E7;
+  background-color: #0de;
 }
  
 .title {
   font-size: 1rem;
   font-weight: 500;
-  color: #fff;
+  color: #060606;
   margin: 0;
   text-align: center;
 }
