@@ -34,6 +34,7 @@
   font-weight: 500;
   color: #fff;
   margin: 0;
+  text-align: center;
 }
  
 .card-body{
@@ -67,4 +68,8 @@ label{
 .chip-label {
   font-size: 0.7rem;
   color:#000
+}
+
+.counter {
+  text-align: center;
 }
