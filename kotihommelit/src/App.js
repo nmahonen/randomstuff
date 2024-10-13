@@ -42,7 +42,10 @@ if (isChecked) {
 }
 };
 
-const completedCount = checkedList.length;
+const completedCount = checkedList.reduce((count, item) => {
+  return count + (item === "Ei_puhelinta" ? 2 : 1);
+}, 0);
+
 const goal = 10;
 
   return (
